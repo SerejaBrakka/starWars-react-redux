@@ -1,0 +1,11 @@
+.errorMessage {
+  width: 600px;
+  color: var(--color-gold);
+  font-family: var(--font-family-main);
+  margin: auto;
+  margin-top: 100px;
+  line-height: 1.7;
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--color-white);
+  font-size: var(--font-size20);
+}

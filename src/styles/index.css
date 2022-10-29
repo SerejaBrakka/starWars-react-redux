@@ -1,0 +1,19 @@
+:root {
+  --color-dark: #10100e;
+  --color-white: #fff;
+  --color-black: #111;
+  --color-gold: #ffff00;
+
+  --border-raduis-small: 3px;
+  --margin20: 20px;
+
+  --font-family-main: sans-serif;
+  --font-size20: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-dark);
+  font-family: var(--font-family-main);
+}

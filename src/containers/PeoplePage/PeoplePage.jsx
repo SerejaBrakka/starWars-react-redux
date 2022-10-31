@@ -1,17 +1,33 @@
 import React, { useEffect, useState } from "react";
-import PeopleList from "@components/PeoplePage/PeopleList";
-import { API_PEOPLE } from "@constants/Api";
-import { getItemImage, getPeopleId } from "@services/getPeopleData";
-import { getApiResource } from "@utils/network";
+import PropTypes from "prop-types";
 
 import { withErrorApi } from "@hoc-helpers/withErrorApi";
 
+import PeopleList from "@components/PeoplePage/PeopleList";
+import PeopleNavigation from "@components/PeoplePage/PeopleNavigation";
+import { API_PEOPLE } from "@constants/Api";
+
+import { getApiResource, changeHTTP } from "@utils/network";
+import {
+  getItemImage,
+  getPeopleId,
+  getPeoplePageId,
+} from "@services/getPeopleData";
+
+import UseQueryParams from "@hooks/UseQueryParams";
+
 const PeoplePage = ({ setErrorApi }) => {
   const [people, setPeople] = useState(null);
+  const [prevPage, setPrevPage] = useState(null);
+  const [nextPage, setNextPage] = useState(null);
+  const [counterPage, setCounterPage] = useState(null);
+
+  let query = UseQueryParams();
+  const queryPage = query.get("page");
 
   const getResource = async (url) => {
     const res = await getApiResource(url);
-
+    console.log(res);
     if (res) {
       const peopleList = res.results.map(({ name, url }) => {
         const id = getPeopleId(url);
@@ -24,20 +40,32 @@ const PeoplePage = ({ setErrorApi }) => {
       });
 
       setPeople(peopleList);
+      setPrevPage(changeHTTP(res.previous));
+      setNextPage(changeHTTP(res.next));
+      setCounterPage(getPeoplePageId(url));
       setErrorApi(false);
     } else setErrorApi(true);
   };
 
   useEffect(() => {
-    getResource(API_PEOPLE);
-  }, []);
+    getResource(API_PEOPLE + queryPage);
+  }, [queryPage]);
 
   return (
     <>
-      <h1>Navigation</h1>
+      <PeopleNavigation
+        getResource={getResource}
+        prevPage={prevPage}
+        nextPage={nextPage}
+        counterPage={counterPage}
+      />
       {people && <PeopleList people={people} />}
     </>
   );
+};
+
+PeoplePage.propTypes = {
+  setErrorApi: PropTypes.func,
 };
 
 export default withErrorApi(PeoplePage);

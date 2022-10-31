@@ -1,3 +1,11 @@
-.header {
-  color: blue;
+.wrapper {
+  max-width: var(--width-max);
+  margin: var(--margin30) auto;
+  padding: (--margin30) 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    padding: var(--margin30) var(--margin30);
+  }
 }

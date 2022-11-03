@@ -1,5 +1,7 @@
 import React from "react";
+
 import loader from "@static/loader.svg";
+
 const UILoading = () => {
   return (
     <div>

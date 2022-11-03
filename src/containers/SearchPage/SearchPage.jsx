@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 import { API_PERSON_SEARCH } from "@constants/Api";
 import { getApiResource } from "@utils/network";
@@ -50,6 +51,10 @@ const SearchPage = ({ setErrorApi }) => {
       <SearchPageInfo people={people} />
     </div>
   );
+};
+
+SearchPage.propTypes = {
+  setErrorApi: PropTypes.func,
 };
 
 export default withErrorApi(SearchPage);

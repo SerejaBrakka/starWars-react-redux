@@ -6,7 +6,6 @@ import classes from "./PersonInfo.module.css";
 const PersonInfo = ({ personInfo }) => {
   return (
     <div className={classes.wrapper}>
-     
       <ul className={classes.list__container}>
         {personInfo &&
           personInfo.map(

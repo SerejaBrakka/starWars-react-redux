@@ -2,18 +2,15 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import { withErrorApi } from "@hoc-helpers/withErrorApi";
-
 import PeopleList from "@components/PeoplePage/PeopleList";
 import PeopleNavigation from "@components/PeoplePage/PeopleNavigation";
 import { API_PEOPLE } from "@constants/Api";
-
 import { getApiResource, changeHTTP } from "@utils/network";
 import {
   getItemImage,
   getPeopleId,
   getPeoplePageId,
 } from "@services/getPeopleData";
-
 import UseQueryParams from "@hooks/UseQueryParams";
 
 const PeoplePage = ({ setErrorApi }) => {

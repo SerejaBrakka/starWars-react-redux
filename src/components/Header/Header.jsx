@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
-import Favourite from "../Favourite";
+import { NavLink } from "react-router-dom";
 
 import classes from "./Header.module.css";
 
+import Favourite from "../Favourite";
 import {
-  useTheme,
+  THEME_DARK,
   THEME_LIGHT,
   THEME_NEITRAL,
-  THEME_DARK,
+  useTheme,
 } from "@context/ThemeProvider";
 
-import light from "./img/light.svg";
 import dark from "./img/dark.svg";
+import light from "./img/light.svg";
 import neitral from "./img/neitral.svg";
 
 const Header = () => {
@@ -42,13 +42,13 @@ const Header = () => {
     <div className={classes.header}>
       <img className={classes.icon} src={icon} alt="icon" />
       <ul className={classes.header__list}>
-        <li>
+        <li className="header__text">
           <NavLink to="/">Home</NavLink>
         </li>
-        <li>
+        <li className="header__text">
           <NavLink to="/people/?page=1">People</NavLink>
         </li>
-        <li>
+        <li className="header__text">
           <NavLink to="/search">Search</NavLink>
         </li>
       </ul>

@@ -1,4 +1,6 @@
 import React from "react";
+import { PropTypes } from "prop-types";
+
 import classes from "./UIInput.module.css";
 
 const UIInput = ({ value, onChange, placeholder, type }) => {
@@ -11,6 +13,13 @@ const UIInput = ({ value, onChange, placeholder, type }) => {
       className={classes.input1}
     />
   );
+};
+
+UIInput.propTypes = {
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
+  type: PropTypes.string,
 };
 
 export default UIInput;

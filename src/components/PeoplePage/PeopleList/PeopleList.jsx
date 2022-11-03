@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 import classes from "./PeopleList.module.css";
+
 import UILoading from "@UI/UILoading/UILoading";
 
 const PeopleList = ({ people }) => {

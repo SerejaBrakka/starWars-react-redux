@@ -4,13 +4,12 @@ import { useParams } from "react-router";
 import { useSelector } from "react-redux";
 import PropTypes from "prop-types";
 
-import { withErrorApi } from "@hoc-helpers/withErrorApi";
+import classes from "./PersonPage.module.css";
 
+import { withErrorApi } from "@hoc-helpers/withErrorApi";
 import { API_PERSON } from "@constants/Api";
 import { getItemImage } from "@services/getPeopleData";
 import { getApiResource } from "@utils/network";
-
-import classes from "./PersonPage.module.css";
 import PersonInfo from "@components/PersonPage/PersonInfo";
 import PersonPhoto from "@components/PersonPage/PersonPhoto";
 import PersonLinkBack from "@components/PersonPage/PersonLinkBack";

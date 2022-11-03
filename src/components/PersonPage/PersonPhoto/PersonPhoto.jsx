@@ -4,13 +4,13 @@ import PropTypes from "prop-types";
 
 import classes from "./PersonPhoto.module.css";
 
-import favouriteTrue from "./img/favouriteTrue.svg";
-import favouriteNone from "./img/favouriteNone.svg";
-
 import {
   setPersonToFavourite,
   removePersonFromFavourite,
 } from "@store/actions";
+
+import favouriteTrue from "./img/favouriteTrue.svg";
+import favouriteNone from "./img/favouriteNone.svg";
 
 const PersonPhoto = ({
   personPhoto,

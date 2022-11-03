@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 
 import classes from "./FavouritePage.module.css";
-
 import PeopleList from "@components/PeoplePage/PeopleList/PeopleList";
+
 import video from "./img/video.mp4";
+
 const FavouritePage = () => {
   const [people, setPeople] = useState([]);
   let storeData = useSelector((state) => state.favouriteReducer.favourites);

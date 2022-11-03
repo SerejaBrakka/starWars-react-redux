@@ -1,22 +1,22 @@
 import React from "react";
 
-import { PropTypes } from "prop-types";
+import classes from "./ChooseSide.module.css";
 
 import {
-  useTheme,
+  THEME_DARK,
   THEME_LIGHT,
   THEME_NEITRAL,
-  THEME_DARK,
+  useTheme,
 } from "@context/ThemeProvider";
+
 import blackSide from "./img/blackSide.jpg";
 import lightSide from "./img/lightSide.jpg";
 import neitralSide from "./img/neitralSide.jpg";
-import classes from "./ChooseSide.module.css";
 
 const ChooseSide = () => {
   const isTheme = useTheme();
   return (
-    <div>
+    <div className={classes.wrapper__container}>
       <div className={classes.container}>
         <img
           src={blackSide}
@@ -30,7 +30,7 @@ const ChooseSide = () => {
           onClick={() => isTheme.change(THEME_LIGHT)}
         />
       </div>
-      <div className={classes.wrapper__img3}>
+      <div className={classes.wrapper}>
         <img
           className={classes.container__img3}
           src={neitralSide}
@@ -40,7 +40,5 @@ const ChooseSide = () => {
     </div>
   );
 };
-
-ChooseSide.propTypes = {};
 
 export default ChooseSide;

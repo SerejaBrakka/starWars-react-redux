@@ -1,7 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import arrowBack from "@static/arrowBack.svg";
+
 import classes from "./PersonLinkBack.module.css";
+
+import arrowBack from "@static/arrowBack.svg";
 const PersonLinkBack = () => {
   const navigate = useNavigate();
 

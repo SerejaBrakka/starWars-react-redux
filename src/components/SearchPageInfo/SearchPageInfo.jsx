@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import PeopleList from "@components/PeoplePage/PeopleList";
 
 const SearchPageInfo = ({ people }) => {
@@ -11,6 +13,10 @@ const SearchPageInfo = ({ people }) => {
       )}
     </div>
   );
+};
+
+SearchPageInfo.propTypes = {
+  people: PropTypes.array,
 };
 
 export default SearchPageInfo;

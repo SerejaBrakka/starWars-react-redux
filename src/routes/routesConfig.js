@@ -7,7 +7,7 @@ import SearchPage from "@containers/SearchPage/SearchPage";
 
 const routesConfig = [
   {
-    path: "/home",
+    path: "/",
     element: <HomePage />,
   },
   {

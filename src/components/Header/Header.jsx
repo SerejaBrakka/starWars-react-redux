@@ -43,7 +43,7 @@ const Header = () => {
       <img className={classes.icon} src={icon} alt="icon" />
       <ul className={classes.header__list}>
         <li>
-          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
           <NavLink to="/people/?page=1">People</NavLink>

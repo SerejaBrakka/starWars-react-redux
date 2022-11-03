@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/starWars-react-redux/static/css/main.8840146a.css",
-    "main.js": "/starWars-react-redux/static/js/main.55427736.js",
+    "main.js": "/starWars-react-redux/static/js/main.b1a6e954.js",
     "static/media/neitralSide.jpg": "/starWars-react-redux/static/media/neitralSide.1ea2ac69fe10b0981c4f.jpg",
     "static/media/bgNeitral.jpg": "/starWars-react-redux/static/media/bgNeitral.729de1eaed1fcae012b3.jpg",
     "static/media/lightSide.jpg": "/starWars-react-redux/static/media/lightSide.b5dc98116497e9cdcb8f.jpg",
@@ -17,10 +17,10 @@
     "static/media/favouriteLogo.svg": "/starWars-react-redux/static/media/favouriteLogo.aeeec9b0ba27549806c1cc83d4d91e72.svg",
     "static/media/arrowBack.svg": "/starWars-react-redux/static/media/arrowBack.948cc5bbef1eee1dc74614a04c87d8de.svg",
     "main.8840146a.css.map": "/starWars-react-redux/static/css/main.8840146a.css.map",
-    "main.55427736.js.map": "/starWars-react-redux/static/js/main.55427736.js.map"
+    "main.b1a6e954.js.map": "/starWars-react-redux/static/js/main.b1a6e954.js.map"
   },
   "entrypoints": [
     "static/css/main.8840146a.css",
-    "static/js/main.55427736.js"
+    "static/js/main.b1a6e954.js"
   ]
 }

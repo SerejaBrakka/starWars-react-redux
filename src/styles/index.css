@@ -14,7 +14,7 @@
   --margin30: 30px;
   --transition: 0.4s;
 
-  --font-family-main: sans-serif;
+  --font-family-main: "Source Code Pro", monospace;
   --font-size16: 16px;
   --font-size20: 20px;
   --font-size-header: 26px;
@@ -80,4 +80,27 @@ img {
   font-size: var(--font-size-header);
   color: var(--theme-default-header);
   transition: color var(--transition);
+}
+
+/* Firefox */
+* {
+  scrollbar-color: rgb(37, 56, 97) rgba(0, 0, 0, 0.7);
+  scrollbar-width: thin;
+}
+
+/* Chrome */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(37, 56, 97);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.7);
 }

@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import classes from "./FavouritePage.module.css";
 
 import PeopleList from "@components/PeoplePage/PeopleList/PeopleList";
-import noFavourites from "./img/noFavourites.jpeg";
+import video from "./img/video.mp4";
 const FavouritePage = () => {
   const [people, setPeople] = useState([]);
   let storeData = useSelector((state) => state.favouriteReducer.favourites);
@@ -29,9 +29,11 @@ const FavouritePage = () => {
             Возможно, вы не являетесь фанатом серии Star Wars,
             <br /> так как не добавили в избранные ни одного персонажа
           </h1>
-          <img
+          <video
+            muted
+            autoPlay
             className={classes.noFavourites}
-            src={noFavourites}
+            src={video}
             alt="no-favourites"
           />
         </div>

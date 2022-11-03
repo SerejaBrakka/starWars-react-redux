@@ -18,7 +18,7 @@
   margin: 0 10px;
   padding: 7px 10px;
   min-width: 70px;
-  color: var(--color-white);
+  color: var(--theme-neitral-header);
   text-align: center;
   font-family: var(--font-family-main);
   text-decoration: none;
@@ -26,6 +26,7 @@
   text-shadow: var(--text-shadow-yellow);
   transition: var(--transition);
   box-sizing: border-box;
+  font-size: var(--font-size-header);
 }
 
 .header__list a:focus {

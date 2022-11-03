@@ -3,11 +3,13 @@ export const HTTPS = "https://";
 
 //swapi
 
-export const SWAPI_ROOT = "https://swapi.dev/api/";
+// export const SWAPI_ROOT = "https://swapi.dev/api/";
+export const SWAPI_ROOT = "https://swapi.py4e.com/api/";
 export const SWAPI_PEOPLE = "people";
 
 export const QUERY_PARAMS_PEOPLE = "/?page=";
 export const API_PEOPLE = SWAPI_ROOT + SWAPI_PEOPLE + QUERY_PARAMS_PEOPLE;
+export const API_PERSON = SWAPI_ROOT + SWAPI_PEOPLE;
 
 //visual-guide
 export const GUIDE_ROOT_IMG = "https://starwars-visualguide.com/assets/img/";

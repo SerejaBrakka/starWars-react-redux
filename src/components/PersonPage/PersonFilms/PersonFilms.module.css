@@ -1,0 +1,33 @@
+.wrapper {
+  margin-left: var(--margin30);
+  padding: var(--margin20) 0;
+}
+.list__container {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--margin20);
+  color: var(--color-white);
+}
+.item__episode {
+  padding: var(--margin10);
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-red);
+  opacity: 0.9;
+}
+
+.item__title {
+  color: var(--color-gold);
+  text-shadow: var(--text-shadow-yellow);
+}
+
+@media screen and (max-width: 1020px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}

@@ -1,6 +1,7 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   margin-bottom: var(--margin30);
 }
 
@@ -32,4 +33,9 @@
   color: var(--color-violet);
   text-shadow: none;
   border-radius: var(--border-radius-small);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
 }

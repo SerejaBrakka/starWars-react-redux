@@ -12,7 +12,7 @@ export const getPeoplePageId = (url) => {
 };
 
 function getId(url) {
-  return url.match(/\d{1,3}/)[0];
+  return url.match(/\/\d{1,3}\//)[0].replace(/\//g, "");
 }
 
 export const getPeopleId = (url) => getId(url);

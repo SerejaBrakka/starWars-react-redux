@@ -1,0 +1,16 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: var(--font-bold);
+  color: var(--color-gold);
+  text-decoration: none;
+  font-size: var(--font-size20);
+}
+.link__img {
+  width: 30px;
+  height: 30px;
+  margin-right: var(--margin20);
+  object-fit: contain;
+  object-position: center center;
+}

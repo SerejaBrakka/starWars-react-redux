@@ -28,3 +28,18 @@ export const getApiResource = async (url) => {
     return false;
   }
 };
+
+/**
+ * Функция принимает массив url и возвращает Promise.all с результатом запроса
+ * @param {Array} urls - принимает массив url
+ * @returns {Promise} - возвращает Promise.all с результатом запроса
+ */
+export const makeConcurrentRequest = async (urls) => {
+  const res = await Promise.all(
+    urls.map((url) => {
+      return fetch(url).then((res) => res.json());
+    })
+  );
+
+  return res;
+};

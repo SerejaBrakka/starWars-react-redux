@@ -27,7 +27,7 @@ const PeoplePage = ({ setErrorApi }) => {
 
   const getResource = async (url) => {
     const res = await getApiResource(url);
-    console.log(res);
+
     if (res) {
       const peopleList = res.results.map(({ name, url }) => {
         const id = getPeopleId(url);

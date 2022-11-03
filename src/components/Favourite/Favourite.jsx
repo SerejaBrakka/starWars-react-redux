@@ -8,7 +8,9 @@ import favouriteLogo from "./img/favouriteLogo.svg";
 
 const Favourite = () => {
   const [count, setCount] = useState(0);
-  const favouritesData = useSelector((state) => state.favouriteReducer);
+  const favouritesData = useSelector(
+    (state) => state.favouriteReducer.favourites
+  );
   useEffect(() => {
     setCount(favouritesData.length);
   }, [favouritesData]);

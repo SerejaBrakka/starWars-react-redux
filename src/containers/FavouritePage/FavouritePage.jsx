@@ -31,6 +31,7 @@ const FavouritePage = () => {
           </h1>
           <video
             muted
+            loop
             autoPlay
             className={classes.noFavourites}
             src={video}

@@ -51,3 +51,24 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container__img1 {
+    width: 80vw;
+  }
+  .container__img2 {
+    width: 80vw;
+  }
+  .container__img3 {
+    width: 80vw;
+  }
+  .container img:hover {
+    transform: scale(1.05);
+  }
+  .container__img3:hover {
+    transform: scale(1.05);
+  }
+}

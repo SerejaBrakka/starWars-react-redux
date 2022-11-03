@@ -9,7 +9,7 @@ const PeopleNavigation = ({ getResource, prevPage, nextPage, counterPage }) => {
   let handleChangePrev = () => getResource(prevPage);
   return (
     <div>
-      <Link to={`?page=${counterPage - 1}`}>
+      <Link to={`?page=${counterPage - 1}`} style={{ marginRight: "20px" }}>
         <UIButton
           text="Previous"
           prevPage={prevPage}

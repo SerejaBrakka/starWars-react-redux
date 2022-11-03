@@ -13,10 +13,7 @@ const Favourite = () => {
   );
 
   useEffect(() => {
-    console.log(favouritesData);
-    typeof favouritesData === "undefined"
-      ? setCount(0)
-      : setCount(favouritesData.length);
+    setCount(favouritesData.length);
   }, [favouritesData]);
   return (
     <div className={classes.container}>

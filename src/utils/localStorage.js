@@ -6,5 +6,6 @@ export const getLocalStorage = (key) => {
   return {};
 };
 export const setLocalStorage = (key, data) => {
+  console.log(data);
   localStorage.setItem(key, JSON.stringify(data));
 };

@@ -5,7 +5,7 @@ import {
 
 import { getLocalStorage } from "@utils/localStorage";
 let initialState = {
-  favourites: [] || getLocalStorage("state").favouritesF,
+  favourites: getLocalStorage("state"),
 };
 const favouriteReducer = (state = initialState, action) => {
   switch (action.type) {

@@ -8,10 +8,15 @@ import favouriteLogo from "./img/favouriteLogo.svg";
 
 const Favourite = () => {
   const [count, setCount] = useState(0);
-  const favouritesData = useSelector((state) => state.favouriteReducer);
+  const favouritesData = useSelector(
+    (state) => state.favouriteReducer.favourites
+  );
+
   useEffect(() => {
     console.log(favouritesData);
-    setCount(favouritesData.favourites.length);
+    typeof favouritesData === "undefined"
+      ? setCount(0)
+      : setCount(favouritesData.length);
   }, [favouritesData]);
   return (
     <div className={classes.container}>

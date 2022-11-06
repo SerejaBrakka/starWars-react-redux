@@ -93,8 +93,8 @@ img {
   border-radius: 50%;
   position: absolute;
   transform-origin: -10vw 20vh;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   box-shadow: var(--text-shadow-blue);
   animation-name: moving;
   animation-iteration-count: infinite;
@@ -103,9 +103,7 @@ img {
 .list__photo:hover {
   box-shadow: var(--text-shadow-yellow);
 }
-.list__name:active .list__photo {
-  transform: scale(150);
-}
+
 .list__photo1 {
   animation-duration: 10s !important;
   transform-origin: 10vw 20vh;
@@ -143,6 +141,8 @@ img {
 @media (max-width: 768px) {
   .list__photo {
     animation: none;
+    width: 100px;
+    height: 100px;
   }
 }
 @media (max-width: 1200px) {

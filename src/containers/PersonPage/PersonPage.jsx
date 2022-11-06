@@ -40,8 +40,8 @@ const PersonPage = ({ setErrorApi }) => {
         setPersonInfo([
           { title: "height", data: res.height },
           { title: "mass", data: res.mass },
-          { title: "height", data: res.height },
           { title: "gender", data: res.gender },
+          { title: "birth year", data: res.birth_year },
         ]);
 
         setPersonName(res.name);

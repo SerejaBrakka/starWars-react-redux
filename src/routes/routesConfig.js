@@ -4,6 +4,8 @@ import NotFoundPage from "@containers/NotFoundPage";
 import PersonPage from "@containers/PersonPage";
 import FavouritePage from "@containers/FavouritePage";
 import SearchPage from "@containers/SearchPage/SearchPage";
+import PlanetsPage from "@containers/PlanetsPage";
+import PlanetPage from "@components/PlanetPage";
 
 const routesConfig = [
   {
@@ -13,6 +15,14 @@ const routesConfig = [
   {
     path: "/people",
     element: <PeoplePage />,
+  },
+  {
+    path: "/planet",
+    element: <PlanetsPage />,
+  },
+  {
+    path: "/planet/:id",
+    element: <PlanetPage />,
   },
   {
     path: "/people/:id",

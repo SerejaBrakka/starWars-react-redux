@@ -51,6 +51,9 @@ const Header = () => {
         <li className="header__text">
           <NavLink to="/search">Search</NavLink>
         </li>
+        <li className="header__text">
+          <NavLink to="/planet">Planet</NavLink>
+        </li>
       </ul>
       <Favourite />
     </div>

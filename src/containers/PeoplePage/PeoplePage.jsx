@@ -12,6 +12,7 @@ import {
   getPeoplePageId,
 } from "@services/getPeopleData";
 import UseQueryParams from "@hooks/UseQueryParams";
+import UILoading from "@components/UI/UILoading/UILoading";
 
 const PeoplePage = ({ setErrorApi }) => {
   const [people, setPeople] = useState(null);
@@ -56,7 +57,7 @@ const PeoplePage = ({ setErrorApi }) => {
         nextPage={nextPage}
         counterPage={counterPage}
       />
-      {people && <PeopleList people={people} />}
+      {people ? <PeopleList people={people} /> : <UILoading />}
     </>
   );
 };

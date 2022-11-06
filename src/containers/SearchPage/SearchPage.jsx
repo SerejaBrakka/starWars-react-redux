@@ -7,6 +7,7 @@ import { getItemImage, getPeopleId } from "@services/getPeopleData";
 import SearchPageInfo from "@components/SearchPageInfo";
 import { withErrorApi } from "@hoc-helpers/withErrorApi";
 import UIInput from "@components/UI/UIInput/UIInput";
+import UILoading from "@components/UI/UILoading/UILoading";
 
 const SearchPage = ({ setErrorApi }) => {
   const [inputSearchValue, setInputSearchValue] = useState("");
@@ -48,7 +49,7 @@ const SearchPage = ({ setErrorApi }) => {
         onChange={handleInputChange}
         placeholder={"Input characters name"}
       />
-      <SearchPageInfo people={people} />
+      {people ? <SearchPageInfo people={people} /> : <UILoading />}
     </div>
   );
 };

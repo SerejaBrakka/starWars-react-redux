@@ -1,7 +1,7 @@
 import {
   GUIDE_IMG_EXTENSION,
-  URL_IMG_PERSON,
   QUERY_PARAMS_PEOPLE,
+  URL_IMG_PERSON,
 } from "@constants/Api";
 
 export const getPeoplePageId = (url) => {

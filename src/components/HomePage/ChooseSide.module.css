@@ -10,7 +10,12 @@
   display: flex;
   justify-content: center;
 }
-
+.wrapper__container img:hover {
+  cursor: grab;
+}
+.wrapper__container img:active {
+  cursor: grabbing;
+}
 .container img {
   box-sizing: border-box;
   border: 5px solid transparent;
